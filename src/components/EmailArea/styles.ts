@@ -26,6 +26,18 @@ export const EmailAreaContainer = styled.section`
   @media (max-width: 900px) {
     max-width: 49.125rem;
   }
+
+  @media (max-width: 784px) {
+    max-width: 40rem;
+  }
+
+  @media (max-width: 784px) {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    margin: 0;
+    height: auto;
+  }
 `
 
 export const EmailAreaLeft = styled.div`
@@ -38,12 +50,26 @@ export const EmailAreaLeft = styled.div`
     width: 18.75rem;
     margin-left: 5rem;
   }
+
+  @media (max-width: 784px) {
+    margin: 0;
+    margin-bottom: 2.81rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 `
 
 export const EmailAreaLeftH3 = styled.h3`
   font-size: 2rem;
   color: ${(props) => props.theme.white};
   margin-bottom: 1.5rem;
+
+  @media (max-width: 784px) {
+    text-align: center;
+    margin-top: 1.875rem;
+  }
 `
 
 export const EmailAreaLeftInput = styled.input`
@@ -53,6 +79,10 @@ export const EmailAreaLeftInput = styled.input`
   font-size: 1.125rem;
   outline-color: ${(props) => props.theme['orange-500']};
   margin-bottom: 1.5rem;
+
+  @media (max-width: 784px) {
+    width: 100%;
+  }
 `
 
 export const EmailAreaLeftButton = styled.button`
@@ -64,13 +94,38 @@ export const EmailAreaLeftButton = styled.button`
   background-color: ${(props) => props.theme['orange-500']};
   border: 0;
   cursor: pointer;
+
+  @media (max-width: 784px) {
+    width: 100%;
+  }
 `
 
 export const EmailAreaRight = styled.div`
   flex: 1;
 
+  @media (max-width: 784px) {
+    align-self: flex-end;
+    display: flex;
+    justify-content: end;
+    margin-top: 1.25rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    margin-bottom: 2.81rem;
+  }
+
   img {
     width: 100%;
     height: 65%;
+
+    @media (max-width: 784px) {
+      width: 80%;
+      height: 65%;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 0.875rem;
+    }
   }
 `

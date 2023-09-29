@@ -12,6 +12,12 @@ export const FooterContainer = styled.footer`
     font-size: 1.125rem;
     font-weight: 400;
     margin: 3.125rem 0;
+
+    @media (max-width: 640px) {
+      padding: 1.875rem 0;
+      font-size: 1rem;
+      margin: 0;
+    }
   }
 
   @media (max-width: 1280px) {
@@ -24,5 +30,18 @@ export const FooterContainer = styled.footer`
 
   @media (max-width: 900px) {
     max-width: 49.125rem;
+  }
+
+  @media (max-width: 784px) {
+    max-width: 40rem;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 21.5rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
   }
 `

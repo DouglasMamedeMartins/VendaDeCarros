@@ -12,6 +12,12 @@ export const GalleryContainer = styled.section`
   @media (max-width: 1024px) {
     max-width: 56.25rem;
   }
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const GalleryHeader = styled.div`
@@ -24,6 +30,12 @@ export const GalleryHeader = styled.div`
   @media (max-width: 1024px) {
     margin-bottom: 1.25rem;
   }
+
+  @media (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.125rem;
+  }
 `
 
 export const GalleryTitle = styled.h3`
@@ -33,6 +45,10 @@ export const GalleryTitle = styled.h3`
 
   @media (max-width: 1024px) {
     font-size: 2rem;
+  }
+
+  @media (max-width: 784px) {
+    width: 1.75rem;
   }
 `
 
@@ -64,6 +80,12 @@ export const GalleryPhotos = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   img {
     width: 33%;
     height: 34.375rem;
@@ -78,6 +100,12 @@ export const GalleryPhotos = styled.div`
 
     @media (max-width: 900px) {
       height: 25rem;
+    }
+
+    @media (max-width: 640px) {
+      margin-bottom: 0.625rem;
+      width: 75%;
+      height: 80%;
     }
   }
 `
@@ -96,5 +124,26 @@ export const GalleryButton = styled.button`
   &:hover {
     color: ${(props) => props.theme.white};
     background-color: ${(props) => props.theme['orange-500']};
+  }
+`
+
+export const ButtonMobileGallery = styled.div`
+  @media (max-width: 640px) {
+    border: 1px solid ${(props) => props.theme['gray-200']};
+    width: 90%;
+    display: flex;
+  }
+
+  button {
+    display: block;
+    background-color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme['orange-500']};
+    text-decoration: none;
+    width: 100%;
+    border: 0;
+    height: 4rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
   }
 `

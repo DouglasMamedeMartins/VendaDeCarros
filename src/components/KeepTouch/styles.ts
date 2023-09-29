@@ -18,9 +18,26 @@ export const KeepTouchContainer = styled.section`
   @media (max-width: 900px) {
     max-width: 49.125rem;
   }
+
+  @media (max-width: 784px) {
+    max-width: 40rem;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
-export const KeepTouchArea1 = styled.div``
+export const KeepTouchArea1 = styled.div`
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+  }
+`
 
 export const KeepTouchArea1H2 = styled.h2`
   font-size: 2.81rem;
@@ -37,6 +54,14 @@ export const KeepTouchArea1P = styled.p`
 
 export const KeepTouchArea2 = styled.div`
   margin-right: 3.125rem;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 1.25rem;
+  }
 `
 
 export const KeepTouchArea2Title = styled.div`
@@ -52,9 +77,22 @@ export const KeepTouchArea2Link = styled.div`
   color: ${(props) => props.theme['gray-400']};
   margin-bottom: 2rem;
   cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0.625rem;
+  }
 `
 
-export const KeepTouchArea3 = styled.div``
+export const KeepTouchArea3 = styled.div`
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 1.25rem;
+    margin-bottom: 4.68rem;
+  }
+`
 
 export const KeepTouchArea3Title = styled.div`
   font-size: 1.125rem;

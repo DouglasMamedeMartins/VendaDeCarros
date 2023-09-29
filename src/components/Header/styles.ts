@@ -24,6 +24,10 @@ export const HeaderNav = styled.nav`
   @media (max-width: 900px) {
     max-width: 49.125rem;
   }
+
+  @media (max-width: 784px) {
+    max-width: 40rem;
+  }
 `
 
 export const MenuLeft = styled.div`

@@ -17,12 +17,39 @@ export const VersionsContainer = styled.section`
   @media (max-width: 900px) {
     max-width: 49.125rem;
   }
+
+  @media (max-width: 784px) {
+    max-width: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const VersionsLeftArea = styled.div`
   margin-right: 3.125rem;
   min-width: 18.75rem;
   height: 100%;
+
+  @media (max-width: 784px) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    @media (max-width: 640px) {
+      width: 21.43rem;
+      height: 10.31rem;
+    }
+  }
 `
 
 export const VersionsAreaH3 = styled.h3`
@@ -62,6 +89,11 @@ export const VersionsButtons = styled.button`
       width: 7.5rem;
       height: 2.5rem;
     }
+
+    @media (max-width: 784px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 `
 
@@ -88,6 +120,12 @@ export const VersionsRightArea = styled.div`
   @media (max-width: 900px) {
     max-width: 25rem;
   }
+
+  @media (max-width: 784px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const VersionsRightAreaH3 = styled.h3`
@@ -103,6 +141,19 @@ export const VersionsRightAreaH3 = styled.h3`
   @media (max-width: 900px) {
     font-size: 1.625rem;
   }
+
+  @media (max-width: 784px) {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    width: 21.875rem;
+  }
+
+  @media (max-width: 640px) {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
 `
 
 export const VersionsFeatures = styled.div`
@@ -112,6 +163,23 @@ export const VersionsFeatures = styled.div`
   align-items: center;
   border-bottom: 1px solid ${(props) => props.theme['gray-200']};
   padding: 1.25rem;
+
+  @media (max-width: 784px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.56rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.56rem;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+  }
 
   p {
     font-size: 1.375rem;
@@ -130,12 +198,27 @@ export const VersionsFeatures = styled.div`
     @media (max-width: 900px) {
       font-size: 1rem;
     }
+
+    @media (max-width: 784px) {
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 0.875rem;
+    }
   }
 
   img {
     width: 1.56rem;
     height: 1.56rem;
     margin-right: 1.25rem;
+
+    @media (max-width: 784px) {
+      margin-right: 0.625rem;
+    }
+    @media (max-width: 784px) {
+      font-size: 0.625rem;
+    }
   }
 `
 
@@ -161,5 +244,17 @@ export const Button = styled.button`
   @media (max-width: 1024px) {
     margin-top: 0;
     height: 3rem;
+  }
+
+  @media (max-width: 784px) {
+    width: 110%;
+    margin: 0;
+    margin-bottom: 1.875rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1.875rem;
   }
 `
