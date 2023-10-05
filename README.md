@@ -7,4 +7,4 @@ Feito para praticar react e styled-components
 https://venda-de-carros.vercel.app/
 
 
-# Caso queira fazer um clone do projeto basta copiar o link do repositório e usar o comando npm init e apos npm run dev
+# Caso queira fazer um clone do projeto basta copiar o link do repositório e usar o comando npm init e apos npm run dev.
