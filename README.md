@@ -1,4 +1,4 @@
-# Projeto feito em react para simular uma venda de carros
+# Projeto feito em react para simular uma venda de carros.
 
 Feito para praticar react e styled-components
 
